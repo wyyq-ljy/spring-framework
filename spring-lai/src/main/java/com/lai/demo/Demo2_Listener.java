@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Demo2_Listener implements ApplicationListener {
+public class Demo2_Listener implements ApplicationListener<ApplicationEvent> {
 	/**
 	 * Handle an application event.
 	 *
