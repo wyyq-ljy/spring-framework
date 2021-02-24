@@ -84,7 +84,9 @@ public class AnnotatedBeanDefinitionReader {
 		Assert.notNull(registry, "BeanDefinitionRegistry must not be null");
 		Assert.notNull(environment, "Environment must not be null");
 		this.registry = registry;
+		// 创建一个条件计算器对象
 		this.conditionEvaluator = new ConditionEvaluator(registry, environment, null);
+		//为容器中注册系统的bean定义信息
 		AnnotationConfigUtils.registerAnnotationConfigProcessors(this.registry);
 	}
 
@@ -287,6 +289,7 @@ public class AnnotatedBeanDefinitionReader {
 
 
 	/**
+	 * 创建环境
 	 * Get the Environment from the given registry if possible, otherwise return a new
 	 * StandardEnvironment.
 	 */

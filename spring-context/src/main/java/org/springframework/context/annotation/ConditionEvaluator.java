@@ -144,6 +144,7 @@ class ConditionEvaluator {
 		@Nullable
 		private final ClassLoader classLoader;
 
+		//创建一个条件计算器对象
 		public ConditionContextImpl(@Nullable BeanDefinitionRegistry registry,
 				@Nullable Environment environment, @Nullable ResourceLoader resourceLoader) {
 
