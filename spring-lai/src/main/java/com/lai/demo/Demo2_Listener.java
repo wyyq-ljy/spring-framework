@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Demo2_Listener implements ApplicationListener<ApplicationEvent> {
 	/**
 	 * Handle an application event.
-	 *
+	 * test
 	 * @param event the event to respond to
 	 */
 	@Override
